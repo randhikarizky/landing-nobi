@@ -1,0 +1,24 @@
+h1.title {
+    font-size: 75px;
+}
+
+p.subtitle {
+    font-size: 35px;
+}
+
+.container {
+    
+}
+
+#section-1 {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,29,62,1) 100%);
+
+    color: white;
+}
