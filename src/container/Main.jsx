@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
-import '../components/style/main.scss'
+// import '../components/style/main.scss'
+import '../components/style/index.scss'
+
 import ArtRocket from '../components/assets/img/art-rocket.svg'
 import AppBtn from '../components/assets/img/btn-appstore.svg'
 import PlayBtn from '../components/assets/img/btn-playstore.svg'
@@ -25,12 +27,13 @@ export class Main extends Component {
                                 <img className="img-fluid" src={ArtNobilogo} alt="" />
                             </a>
                             <div className="collapse navbar-collapse" id="navbarNobi">
-                                <ul className="navbar-nav ml-auto">
+                                <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link active" aria-current="page" href="#">Nobi</a>
+                                        <a className="nav-link active" aria-current="page" href="#">Strategy Maker</a>
                                     </li>
+                                    <div className="vr" />
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Link</a>
+                                        <a className="nav-link" href="#">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -40,7 +43,7 @@ export class Main extends Component {
                 <div className="container-fluid" id="section-1">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-9 ttl-container">
+                            <div className="col-sm-9 ttl-container">
                                 <h1 className="title">
                                     Grow Crypto The Easy Way
                                 </h1>
@@ -56,7 +59,7 @@ export class Main extends Component {
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-md">
+                            <div className="col-sm">
                                 <div className="img-container">
                                     <img className="img-fluid"  src={ArtRocket} alt="" />
                                 </div>
@@ -67,7 +70,7 @@ export class Main extends Component {
                 <div className="container-fluid" id="section-2">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md">
+                            <div className="col-sm">
                                 <div className="tab-container">
                                     <div className="btn-group" role="group" >
                                         <input type="radio" className="btn-check" checked />
@@ -81,7 +84,7 @@ export class Main extends Component {
                                     </div>
                                 </div>
                                 <div className="table-container">
-                                    <table className="">
+                                    <table className="big-table">
                                         <thead>
                                             <tr>
                                                 <th scope="col">Strategy</th>
@@ -151,11 +154,45 @@ export class Main extends Component {
                                             </tr>
                                         </tbody>
                                     </table>
+
+                                    <table className="compact-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Strategy</th>
+                                                <th scope="col">Volume</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div className="btn-container">
                                     <button className="btn btn-primary btn-arrow">
-                                        Explore More
-                                        <span>
+                                        <span className="btn-txt">
+                                            Explore More
+                                        </span>
+                                        <div className="vr" />
+                                        <span className="btn-icon">
                                             <i className="fas fa-arrow-right"></i>
                                         </span>
                                     </button>
@@ -167,20 +204,23 @@ export class Main extends Component {
                 <div className="container-fluid" id="section-3">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-sm-4">
                                 <div className="img-container">
                                     <img className="img-fluid"  src={ArtStonks} alt="" />
                                 </div>
                             </div>
-                            <div className="col-md ttl-container">
+                            <div className="col-sm ttl-container">
                                 <h1 className="title">
                                     Create Your Own Strategy <br />
                                     And Become a Strategy Maker
                                 </h1>
                                 <div className="btn-container">
                                     <button className="btn btn-primary btn-arrow">
-                                        Learn More
-                                        <span>
+                                        <span className="btn-txt">
+                                            Learn More
+                                        </span>
+                                        <div className="vr" />
+                                        <span className="btn-icon">
                                             <i className="fas fa-arrow-right"></i>
                                         </span>
                                     </button>
@@ -192,10 +232,10 @@ export class Main extends Component {
                 <div className="container-fluid" id="section-4">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md">
+                            <div className="col-sm">
                                 <div className="ttl-container">
                                     <h1 className="title">
-                                        Growing Crypto Has Never Been This Easy!
+                                        Growing Crypto Never Been This Easy!
                                     </h1>
                                     <p className="subtitle">
                                         NOBI makes it safe and easy to trade with our Robo Trading! Just choose the available strategy and let our strategy makers do the magic for you.
@@ -203,41 +243,35 @@ export class Main extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="row steps-container">
-                            <div className="col-md">
-                                <div className="steps">
-                                    <div className="row img-container">
-                                        <img className="img-fluid img-steps" src={Art01} alt="" />
-                                    </div>
-                                    <div className="row">
-                                        <h1 className="title text-center">
-                                            Download App
-                                        </h1>
-                                    </div>
+                        <div className="row steps-container justify-content-center">
+                            <div className="col-sm steps">
+                                <div className="row img-container">
+                                    <img className="img-fluid img-steps" src={Art01} alt="" />
+                                </div>
+                                <div className="row">
+                                    <h1 className="title text-center">
+                                        Download App
+                                    </h1>
                                 </div>
                             </div>
-                            <div className="col-md">
-                                <div className="steps">
-                                    <div className="row img-container">
-                                        <img className="img-fluid img-steps" src={Art02} alt="" />
-                                    </div>
-                                    <div className="row">
-                                        <h1 className="title text-center">
-                                            Fund Your Wallet
-                                        </h1>
-                                    </div>
+                            <div className="col-sm steps">
+                                <div className="row img-container">
+                                    <img className="img-fluid img-steps" src={Art02} alt="" />
+                                </div>
+                                <div className="row">
+                                    <h1 className="title text-center">
+                                        Fund Your Wallet
+                                    </h1>
                                 </div>
                             </div>
-                            <div className="col-md">
-                                <div className="steps">
-                                    <div className="row img-container">
-                                        <img className="img-fluid img-steps" src={Art03} alt="" />
-                                    </div>
-                                    <div className="row">
-                                        <h1 className="title text-center">
-                                            Start Following Strategy
-                                        </h1>
-                                    </div>
+                            <div className="col-sm steps">
+                                <div className="row img-container">
+                                    <img className="img-fluid img-steps" src={Art03} alt="" />
+                                </div>
+                                <div className="row">
+                                    <h1 className="title text-center">
+                                        Start Following Strategy
+                                    </h1>
                                 </div>
                             </div>
                         </div>
@@ -246,10 +280,10 @@ export class Main extends Component {
                 <div className="container-fluid" id="section-5">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md img-container">
+                            <div className="col-sm img-container">
                                 <img className="img-fluid"  src={ArtCoin} alt="" />
                             </div>
-                            <div className="col-md-8 ttl-container">
+                            <div className="col-sm-8 ttl-container">
                                 <h1 className="title">
                                     Start With as Little as ₿0.01
                                 </h1>
@@ -259,10 +293,21 @@ export class Main extends Component {
                                     Simply choose & follow!
                                 </p>
                             </div>
+
+                            <div className="btn-container">
+                                <a href="#">
+                                    <img className="img-fluid" src={AppBtn} alt="" />
+                                </a>
+                                <a href="#">
+                                    <img className="img-fluid" src={PlayBtn} alt="" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div className="blue-bar"></div>
+                
                 <div className="container-fluid" id="section-6">
                     <div className="container">
                         <div className="row">
@@ -310,7 +355,7 @@ export class Main extends Component {
                 <div className="container-fluid" id="footer">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md left-container">
+                            <div className="col-sm left-container">
                                 <div className="img-container">
                                     <img className="img-fluid"  src={ArtNobilogo} alt="" />
                                 </div>
@@ -322,7 +367,7 @@ export class Main extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-md mid-container">
+                            <div className="col-sm mid-container">
                                 <ul>
                                     <li>
                                         English
@@ -335,7 +380,7 @@ export class Main extends Component {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-md right-container">
+                            <div className="col-sm right-container">
                                 <p className="subtitle">
                                     Join Our Community
                                 </p>

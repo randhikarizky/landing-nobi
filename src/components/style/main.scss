@@ -4,6 +4,8 @@ p.subtitle {
 }
 
 button.btn-arrow {
+    display: flex;
+    align-items: center;
     font-size: 30px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -12,10 +14,8 @@ button.btn-arrow {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    span::before {
-        content: "l";
-        margin-left: 5rem;
-        margin-right: 1rem;
+    .vr {
+        padding-bottom: unset;
     }
 }
 
@@ -28,6 +28,28 @@ button.btn {
     padding-bottom: 5vh;
 }
 
+.vr {
+    background-color: white;
+    width: 1px;
+    opacity: .50;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+// RESPONSIVE 
+
+@include media-breakpoint-down(md) {
+    #section-2 {
+        .table-container {
+            table.big-table {
+                display: none;
+            }
+        }
+    }
+}
+
+// END OF RESPONSIVE
+
 #navbar-container {
     padding-top: unset;
     padding-bottom: unset;
@@ -37,12 +59,25 @@ button.btn {
 
         .container {
             padding: .5rem;
-        }
 
-        .navbar-brand {
-            img {
-                width: 155px;
-                height: auto;
+            .navbar-brand {
+                img {
+                    width: 155px;
+                    height: auto;
+                }
+            }
+
+            ul {
+                margin-left: auto;
+
+                a {
+                    color: white;
+                    transition: all ease-in-out .1s;
+                }
+
+                a:hover {
+                    color: rgb(201, 201, 201);
+                }
             }
         }
     }
