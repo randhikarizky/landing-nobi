@@ -19,39 +19,20 @@ export class Main extends Component {
         return (
             <>
                 <div className="container-fluid" id="navbar-container">
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <nav className="navbar fixed-top navbar-expand-lg">
                         <div className="container">
-                            <a className="navbar-brand" href="#">Navbar</a>
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a className="navbar-brand" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNobi" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <img className="img-fluid" src={ArtNobilogo} alt="" />
+                            </a>
+                            <div className="collapse navbar-collapse" id="navbarNobi">
+                                <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
                                         <a className="nav-link active" aria-current="page" href="#">Nobi</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">Link</a>
                                     </li>
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
-                                        </a>
-                                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><hr className="dropdown-divider" /></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link disabled">Disabled</a>
-                                    </li>
                                 </ul>
-                                <form className="d-flex">
-                                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                    <button class ="btn btn-outline-success" type ="submit">Search</button>
-                                </form>
                             </div>
                         </div>
                     </nav>
@@ -68,115 +49,117 @@ export class Main extends Component {
                                 </p>
                                 <div className="btn-container">
                                     <a href="#">
-                                        <img src={AppBtn} alt="" />
+                                        <img className="img-fluid"  src={AppBtn} alt="" />
                                     </a>
                                     <a href="#">
-                                        <img src={PlayBtn} alt="" />
+                                        <img className="img-fluid"  src={PlayBtn} alt="" />
                                     </a>
                                 </div>
                             </div>
                             <div className="col-md">
                                 <div className="img-container">
-                                    <img src={ArtRocket} alt="" />
+                                    <img className="img-fluid"  src={ArtRocket} alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid" id="section-2">
-                    <div className="row">
-                        <div className="col-md">
-                            <div className="tab-container">
-                                <div className="btn-group" role="group" >
-                                    <input type="radio" className="btn-check" checked />
-                                    <label class="btn btn-outline-primary" >Strategy</label>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md">
+                                <div className="tab-container">
+                                    <div className="btn-group" role="group" >
+                                        <input type="radio" className="btn-check" checked />
+                                        <label class="btn btn-outline-primary" >Strategy</label>
 
-                                    <input type="radio" class="btn-check" />
-                                    <label class="btn btn-outline-primary" >Stalking</label>
+                                        <input type="radio" class="btn-check" />
+                                        <label class="btn btn-outline-primary" >Stalking</label>
 
-                                    <input type="radio" class="btn-check" />
-                                    <label class="btn btn-outline-primary" >Saving</label>
+                                        <input type="radio" class="btn-check" />
+                                        <label class="btn btn-outline-primary" >Saving</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="table-container">
-                                <table className="">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Strategy</th>
-                                            <th scope="col">Marketcap</th>
-                                            <th scope="col">Volume</th>
-                                            <th scope="col">Est. Annual Yield</th>
-                                            <th scope="col">Node Collateral</th>
-                                            <th scope="col">Hosted Node</th>
-                                            <th scope="col" colspan="3">1 Month</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">DASH</th>
-                                            <td>Nova Kapital</td>
-                                            <td>$148.574.33</td>
-                                            <td>-12.45%</td>
-                                            <td>-2.12%</td>
-                                            <td>-212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">SMART</th>
-                                            <td>Nova Kapital</td>
-                                            <td>$148.574.33</td>
-                                            <td>-2.36%</td>
-                                            <td>-1.45%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">ZCOIN</th>
-                                            <td>Nova Kapital</td>
-                                            <td>$148.574.33</td>
-                                            <td>-1.66%</td>
-                                            <td>-1.21%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Nova Obscura</th>
-                                            <td>Nova Kapital</td>
-                                            <td>$148.574.33</td>
-                                            <td>-7.50%</td>
-                                            <td>-2.22%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">New Oscillator</th>
-                                            <td>Nova Kapital</td>
-                                            <td>$148.574.33</td>
-                                            <td>-8.92%</td>
-                                            <td>-3.23%</td>
-                                            <td>-212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                            <td>+212.3%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div className="btn-container">
-                                <button className="btn btn-primary btn-arrow">
-                                    Explore More
-                                    <span>
-                                        <i className="fas fa-arrow-right"></i>
-                                    </span>
-                                </button>
+                                <div className="table-container">
+                                    <table className="">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Strategy</th>
+                                                <th scope="col">Marketcap</th>
+                                                <th scope="col">Volume</th>
+                                                <th scope="col">Est. Annual Yield</th>
+                                                <th scope="col">Node Collateral</th>
+                                                <th scope="col">Hosted Node</th>
+                                                <th scope="col" colspan="3">1 Month</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td className="title" scope="row">DASH</td>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                                <td className="title min">-12.45%</td>
+                                                <td className="title min">-2.12%</td>
+                                                <td className="title min">-212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title" scope="row">SMART</td>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                                <td className="title min">-2.36%</td>
+                                                <td className="title min">-1.45%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title" scope="row">ZCOIN</td>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                                <td className="title min">-1.66%</td>
+                                                <td className="title min">-1.21%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title" scope="row">Nova Obscura</td>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                                <td className="title min">-7.50%</td>
+                                                <td className="title min">-2.22%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="title" scope="row">New Oscillator</td>
+                                                <td className="title">Nova Kapital</td>
+                                                <td className="title">$148.574.33</td>
+                                                <td className="title min">-8.92%</td>
+                                                <td className="title min">-3.23%</td>
+                                                <td className="title plus">-212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                                <td className="title plus">+212.3%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div className="btn-container">
+                                    <button className="btn btn-primary btn-arrow">
+                                        Explore More
+                                        <span>
+                                            <i className="fas fa-arrow-right"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -186,7 +169,7 @@ export class Main extends Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="img-container">
-                                    <img src={ArtStonks} alt="" />
+                                    <img className="img-fluid"  src={ArtStonks} alt="" />
                                 </div>
                             </div>
                             <div className="col-md ttl-container">
@@ -220,11 +203,11 @@ export class Main extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row steps-container">
                             <div className="col-md">
-                                <div className="step-container">
+                                <div className="steps">
                                     <div className="row img-container">
-                                        <img src={Art01} className="img-steps" alt="" />
+                                        <img className="img-fluid img-steps" src={Art01} alt="" />
                                     </div>
                                     <div className="row">
                                         <h1 className="title text-center">
@@ -234,9 +217,9 @@ export class Main extends Component {
                                 </div>
                             </div>
                             <div className="col-md">
-                                <div className="step-container">
+                                <div className="steps">
                                     <div className="row img-container">
-                                        <img src={Art02} className="img-steps" alt="" />
+                                        <img className="img-fluid img-steps" src={Art02} alt="" />
                                     </div>
                                     <div className="row">
                                         <h1 className="title text-center">
@@ -246,9 +229,9 @@ export class Main extends Component {
                                 </div>
                             </div>
                             <div className="col-md">
-                                <div className="step-container">
+                                <div className="steps">
                                     <div className="row img-container">
-                                        <img src={Art03} className="img-steps" alt="" />
+                                        <img className="img-fluid img-steps" src={Art03} alt="" />
                                     </div>
                                     <div className="row">
                                         <h1 className="title text-center">
@@ -264,7 +247,7 @@ export class Main extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md img-container">
-                                <img src={ArtCoin} alt="" />
+                                <img className="img-fluid"  src={ArtCoin} alt="" />
                             </div>
                             <div className="col-md-8 ttl-container">
                                 <h1 className="title">
@@ -290,9 +273,9 @@ export class Main extends Component {
                                     </h1>
                                 </div>
                                 <div className="img-container">
-                                    <img src={ArtBinance} className="img-sponsor" alt="" />
-                                    <img src={ArtBitmex} className="img-sponsor" alt="" />
-                                    <img src={ArtProdhunt} className="img-sponsor" alt="" />
+                                    <img className="img-fluid"  src={ArtBinance} className="img-sponsor" alt="" />
+                                    <img className="img-fluid"  src={ArtBitmex} className="img-sponsor" alt="" />
+                                    <img className="img-fluid"  src={ArtProdhunt} className="img-sponsor" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -309,10 +292,10 @@ export class Main extends Component {
                             </p>
                             <div className="btn-container">
                                 <a href="#">
-                                    <img src={AppBtn} alt="" />
+                                    <img className="img-fluid"  src={AppBtn} alt="" />
                                 </a>
                                 <a href="#">
-                                    <img src={PlayBtn} alt="" />
+                                    <img className="img-fluid"  src={PlayBtn} alt="" />
                                 </a>
                             </div>
                             <p className="small">
@@ -329,7 +312,7 @@ export class Main extends Component {
                         <div className="row">
                             <div className="col-md left-container">
                                 <div className="img-container">
-                                    <img src={ArtNobilogo} alt="" />
+                                    <img className="img-fluid"  src={ArtNobilogo} alt="" />
                                 </div>
                                 <div className="footer-text-container">
                                     <p className="subtitle">
