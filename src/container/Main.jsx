@@ -4,6 +4,15 @@ import '../components/style/main.scss'
 import ArtRocket from '../components/assets/img/art-rocket.svg'
 import AppBtn from '../components/assets/img/btn-appstore.svg'
 import PlayBtn from '../components/assets/img/btn-playstore.svg'
+import ArtStonks from '../components/assets/img/art-stonks.svg'
+import Art01 from '../components/assets/img/art-01.png'
+import Art02 from '../components/assets/img/art-02.png'
+import Art03 from '../components/assets/img/art-03.png'
+import ArtCoin from '../components/assets/img/art-coin.svg'
+import ArtBinance from  '../components/assets/img/art-binance.png'
+import ArtBitmex from  '../components/assets/img/art-bitmex.png'
+import ArtProdhunt from  '../components/assets/img/art-producthunt.png'
+import ArtNobilogo from '../components/assets/img/art-nobilogo.png'
 
 export class Main extends Component {
     render() {
@@ -90,7 +99,7 @@ export class Main extends Component {
                                 </div>
                             </div>
                             <div className="table-container">
-                                <table className="table table-bordered">
+                                <table className="">
                                     <thead>
                                         <tr>
                                             <th scope="col">Strategy</th>
@@ -177,18 +186,19 @@ export class Main extends Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="img-container">
-
+                                    <img src={ArtStonks} alt="" />
                                 </div>
                             </div>
                             <div className="col-md ttl-container">
                                 <h1 className="title">
-                                    Create Your Own Strategy And Become a Strategy Maker
+                                    Create Your Own Strategy <br />
+                                    And Become a Strategy Maker
                                 </h1>
                                 <div className="btn-container">
                                     <button className="btn btn-primary btn-arrow">
                                         Learn More
                                         <span>
-
+                                            <i className="fas fa-arrow-right"></i>
                                         </span>
                                     </button>
                                 </div>
@@ -212,27 +222,39 @@ export class Main extends Component {
                         </div>
                         <div className="row">
                             <div className="col-md">
-                                <div className="row img-container"></div>
-                                <div className="row">
-                                    <h2 className="title text-center">
-                                        Download App
-                                    </h2>
+                                <div className="step-container">
+                                    <div className="row img-container">
+                                        <img src={Art01} className="img-steps" alt="" />
+                                    </div>
+                                    <div className="row">
+                                        <h1 className="title text-center">
+                                            Download App
+                                        </h1>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md">
-                                <div className="row img-container"></div>
-                                <div className="row">
-                                    <h2 className="title text-center">
-                                        Fund Your Wallet
-                                    </h2>
+                                <div className="step-container">
+                                    <div className="row img-container">
+                                        <img src={Art02} className="img-steps" alt="" />
+                                    </div>
+                                    <div className="row">
+                                        <h1 className="title text-center">
+                                            Fund Your Wallet
+                                        </h1>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md">
-                                <div className="row img-container"></div>
-                                <div className="row">
-                                    <h2 className="title text-center">
-                                        Start Following Strategy
-                                    </h2>
+                                <div className="step-container">
+                                    <div className="row img-container">
+                                        <img src={Art03} className="img-steps" alt="" />
+                                    </div>
+                                    <div className="row">
+                                        <h1 className="title text-center">
+                                            Start Following Strategy
+                                        </h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +263,9 @@ export class Main extends Component {
                 <div className="container-fluid" id="section-5">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md img-container"></div>
+                            <div className="col-md img-container">
+                                <img src={ArtCoin} alt="" />
+                            </div>
                             <div className="col-md-8 ttl-container">
                                 <h1 className="title">
                                     Start With as Little as ₿0.01
@@ -253,15 +277,28 @@ export class Main extends Component {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="blue-bar"></div>
+                <div className="container-fluid" id="section-6">
+                    <div className="container">
                         <div className="row">
-                            <div className="blue-bar"></div>
                             <div className="sponsor-container">
-                                
+                                <div className="ttl-container">
+                                    <h1 className="title">
+                                        Powered By Industry Best
+                                    </h1>
+                                </div>
+                                <div className="img-container">
+                                    <img src={ArtBinance} className="img-sponsor" alt="" />
+                                    <img src={ArtBitmex} className="img-sponsor" alt="" />
+                                    <img src={ArtProdhunt} className="img-sponsor" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid" id="section-6">
+                <div className="container-fluid" id="section-7">
                     <div className="container">
                         <div className="row justify-content-center">
                             <h1 className="title">
@@ -271,11 +308,18 @@ export class Main extends Component {
                                 Start growing your crypto and join countless crypto believers who have successfully grow with us!
                             </p>
                             <div className="btn-container">
-
+                                <a href="#">
+                                    <img src={AppBtn} alt="" />
+                                </a>
+                                <a href="#">
+                                    <img src={PlayBtn} alt="" />
+                                </a>
                             </div>
                             <p className="small">
                                 Risk warning: Buying, selling, holding and partaking in trading of cryptocurrencies are activities that are 
-                                subject to high market risk. The violate and unpredictable nature of cryptocurrencies may result in significant loss.
+                                subject to high market risk. 
+                                <br />
+                                The violate and unpredictable nature of cryptocurrencies may result in significant loss.
                             </p>
                         </div>
                     </div>
@@ -284,10 +328,14 @@ export class Main extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md left-container">
-                                <div className="img-container"></div>
+                                <div className="img-container">
+                                    <img src={ArtNobilogo} alt="" />
+                                </div>
                                 <div className="footer-text-container">
                                     <p className="subtitle">
-                                        Copyright © 2020 Nobi. All trademarks and copyrights belong to their respective owners.
+                                        Copyright © 2020 Nobi.
+                                        <br />
+                                        All trademarks and copyrights belong to their respective owners.
                                     </p>
                                 </div>
                             </div>
@@ -309,12 +357,36 @@ export class Main extends Component {
                                     Join Our Community
                                 </p>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-blogger-b"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
