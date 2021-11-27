@@ -14,7 +14,7 @@ Open up your favourite terminal, and run the following command
 
 ### `git clone https://www.github.com/rizkyran/landing-nobi.git`
 
-## Install the modules
+## 2 - Install the modules
 
 After you get the repository, head to it's directory, and then install the required packages by run thi command.
 
@@ -22,7 +22,7 @@ PS: This will take some times depending on your internet speed.
 
 ### `npm install`
 
-## Run the App
+## 3 - Run the App
 
 Now the packages are ready, one last step is to run this command to run the app in your local server.
 
